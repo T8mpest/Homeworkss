@@ -3,6 +3,7 @@ int[] numbers = { 1, 2, 3, 4, 5, 43, 8, 11 };
 Console.WriteLine("Не отзеркаленный массив:");
 PrintArray(numbers);
 Console.WriteLine();
+Console.ReadLine();
 Console.WriteLine("Отзеркаленный массив:");
 Reverse(numbers);
 
