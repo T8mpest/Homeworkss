@@ -1,4 +1,6 @@
-﻿while (true) 
+﻿using System.Globalization;
+
+while (true) 
 {
     int[] numbers = { 1, 4, 7, 2, 8, 6, 3 };
     Console.WriteLine("Введите число которое хотите найти");
