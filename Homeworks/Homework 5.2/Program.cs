@@ -8,16 +8,16 @@ Console.WriteLine("Отзеркаленный массив:");
 Reverse(numbers);
 
 static void Reverse(int[] numbers)
-{ 
-   for (int i = numbers.Length - 1; i >= 0; i--)
 {
-    Console.Write(numbers[i] + " ");
-}
+    for (int i = numbers.Length - 1; i >= 0; i--)
+    {
+        Console.Write(numbers[i] + " ");
+    }
 
 }
 
 
-static void PrintArray(int[] numbers )
+static void PrintArray(int[] numbers)
 {
     foreach (int number in numbers)
     {
