@@ -5,30 +5,24 @@
 
         static void Main(string[] args)
         {
-            Car bmwCar = new BMW();
-            bmwCar.GetSpeed();
-            bmwCar.Accelerate();
-            bmwCar.GetSpeed();
-            bmwCar.Brake();
-            bmwCar.GetSpeed();
+            Audi BMWCar = new Audi();
+            BMWCar.Accelerate(); 
+            BMWCar.Brake(); 
+            BMWCar.PrintInterfaceComponents();
 
             Console.WriteLine();
 
-            Car audiCar = new Audi();
-            audiCar.GetSpeed();
-            audiCar.Accelerate();
-            audiCar.GetSpeed();
-            audiCar.Brake();
-            audiCar.GetSpeed();
-            
+            Audi audiCar = new Audi();
+            audiCar.Accelerate(); 
+            audiCar.Brake(); 
+            audiCar.PrintInterfaceComponents();
+
             Console.WriteLine();
 
-            Car mclarenCar = new Mclaren();
-            mclarenCar.GetSpeed();
-            mclarenCar.Accelerate();
-            mclarenCar.GetSpeed();
-            mclarenCar.Brake();
-            mclarenCar.GetSpeed();
+            Audi MclarenCar = new Audi();
+            MclarenCar.Accelerate(); 
+            MclarenCar.Brake(); 
+            MclarenCar.PrintInterfaceComponents();
         }
     }
 }
