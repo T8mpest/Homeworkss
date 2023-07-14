@@ -5,7 +5,7 @@
 
         static void Main(string[] args)
         {
-            Audi BMWCar = new Audi();
+            BMW BMWCar = new BMW();
             BMWCar.Accelerate(); 
             BMWCar.Brake(); 
             BMWCar.PrintInterfaceComponents();
@@ -19,7 +19,7 @@
 
             Console.WriteLine();
 
-            Audi MclarenCar = new Audi();
+            Mclaren MclarenCar = new Mclaren();
             MclarenCar.Accelerate(); 
             MclarenCar.Brake(); 
             MclarenCar.PrintInterfaceComponents();
