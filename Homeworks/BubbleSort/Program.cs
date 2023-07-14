@@ -6,7 +6,7 @@ namespace BubbleSort
     {
         public static void Main(string[] args)
         {
-            int[] array1 = GenerateRandomArray(100000);
+            int[] array1 = GenerateRandomArray(10000);
             int[] array2 = (int[])array1.Clone();
 
             Stopwatch stopwatch = new Stopwatch();
