@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classwork", "Classwork\Clas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework8", "Homework8\Homework8.csproj", "{565321B9-94ED-4360-B3F8-26405202A5B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework10", "Homework10\Homework10.csproj", "{BF10C95C-01C9-4507-BA66-0A95ABF479F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework10", "Homework10\Homework10.csproj", "{BF10C95C-01C9-4507-BA66-0A95ABF479F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{788D1A96-E38D-4DE8-9FF5-A344A31A7B4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{BF10C95C-01C9-4507-BA66-0A95ABF479F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF10C95C-01C9-4507-BA66-0A95ABF479F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF10C95C-01C9-4507-BA66-0A95ABF479F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788D1A96-E38D-4DE8-9FF5-A344A31A7B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788D1A96-E38D-4DE8-9FF5-A344A31A7B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788D1A96-E38D-4DE8-9FF5-A344A31A7B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788D1A96-E38D-4DE8-9FF5-A344A31A7B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
