@@ -12,7 +12,7 @@ namespace Homework10
         void TurnOn();
         void TurnOff();
         void ChangeStation(string station);
-        void IncreaseVolume();
+        void IncreaseVolume(string volume);
     }
 
     public interface ISeats
@@ -72,9 +72,9 @@ namespace Homework10
             Console.WriteLine($"The {Brand} car radio station is changed to {station}.");
         }
 
-        public void IncreaseVolume()
+        public void IncreaseVolume(string volume)
         {
-            Console.WriteLine($"The {Brand} car radio volume is increased.");
+            Console.WriteLine($"The {Brand} car radio volume is increased for {volume}.");
         }
 
         public void AdjustPosition(string position)
@@ -100,7 +100,7 @@ namespace Homework10
             radio.TurnOn();
             radio.TurnOff();
             radio.ChangeStation("FM 101.5");
-            radio.IncreaseVolume();
+            radio.IncreaseVolume("10%");
             seats.AdjustPosition("Position 1");
             seats.HeatOn();
             seats.HeatOff();
@@ -141,9 +141,9 @@ namespace Homework10
             Console.WriteLine($"The {Brand} car radio station is changed to {station}.");
         }
 
-        public void IncreaseVolume()
+        public void IncreaseVolume(string volume)
         {
-            Console.WriteLine($"The {Brand} car radio volume is increased.");
+            Console.WriteLine($"The {Brand} car radio volume is increased for {volume}.");
         }
 
         public void AdjustPosition(string position)
@@ -168,9 +168,9 @@ namespace Homework10
             Console.WriteLine($"{Brand} Car Interface Components:");
             radio.TurnOn();
             radio.TurnOff();
-            radio.ChangeStation("FM 101.5");
-            radio.IncreaseVolume();
-            seats.AdjustPosition("Position 1");
+            radio.ChangeStation("FM 103.2");
+            radio.IncreaseVolume("20%");
+            seats.AdjustPosition("Position 3");
             seats.HeatOn();
             seats.HeatOff();
             Console.WriteLine();
@@ -215,9 +215,9 @@ namespace Homework10
             Console.WriteLine($"The {Brand} car radio station is changed to {station}.");
         }
 
-        public void IncreaseVolume()
+        public void IncreaseVolume(string volume)
         {
-            Console.WriteLine($"The {Brand} car radio volume is increased.");
+            Console.WriteLine($"The {Brand} car radio volume is increased for {volume}.");
         }
 
         public void AdjustPosition(string position)
@@ -243,7 +243,7 @@ namespace Homework10
             radio.TurnOn();
             radio.TurnOff();
             radio.ChangeStation("FM 101.5");
-            radio.IncreaseVolume();
+            radio.IncreaseVolume("40%");
             seats.AdjustPosition("Position 1");
             seats.HeatOn();
             seats.HeatOff();
