@@ -7,7 +7,7 @@ namespace BubbleSort
         public static void Main(string[] args)
         {
             int[] array1 = GenerateRandomArray(10000);
-            int[] array2 = (int[])array1.Clone();
+            
 
             Stopwatch stopwatch = new Stopwatch();
 
@@ -20,7 +20,7 @@ namespace BubbleSort
             // NonGeneric
             stopwatch.Reset();
             stopwatch.Start();
-            NonGenericBubbleSort.BubbleSort(array2);
+            NonGenericBubbleSort.BubbleSort(array1);
             stopwatch.Stop();
             Console.WriteLine("Time without using generic type: " + stopwatch.Elapsed.Milliseconds + " Milliseconds");
         }
