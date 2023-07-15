@@ -18,7 +18,7 @@ namespace Homework10
         static void Main(string[] args)
         {
             BMW BMWCar = new BMW();
-            TestCarFunctionality(BMWCar); 
+            TestCarFunctionality(BMWCar);
 
             BMWCar.PrintInterfaceComponents();
 
