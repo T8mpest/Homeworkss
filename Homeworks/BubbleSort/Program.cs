@@ -15,14 +15,14 @@ namespace BubbleSort
             stopwatch.Start();
             GenericBubbleSort<int>.BubbleSort(array1);
             stopwatch.Stop();
-            Console.WriteLine("Time with generic type: " + stopwatch.Elapsed.Milliseconds + " Milliseconds");
+            Console.WriteLine("Time with generic type: " + stopwatch.Elapsed.TotalMilliseconds + " Milliseconds");
 
             // NonGeneric
             stopwatch.Reset();
             stopwatch.Start();
             NonGenericBubbleSort.BubbleSort(array1);
             stopwatch.Stop();
-            Console.WriteLine("Time without using generic type: " + stopwatch.Elapsed.Milliseconds + " Milliseconds");
+            Console.WriteLine("Time without using generic type: " + stopwatch.Elapsed.TotalMilliseconds + " Milliseconds");
         }
         public static int[] GenerateRandomArray(int size)
         {
