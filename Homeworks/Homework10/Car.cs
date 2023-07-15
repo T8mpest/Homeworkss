@@ -28,9 +28,10 @@ namespace Homework10
             protected int MaxSpeed;
 
             public abstract void Accelerate();
-            public abstract void Brake();           
-        }
-    
+        public abstract void Brake();
+        public abstract void GetSpeed();
+    }
+
 
     class BMW : Vehicle, ISeats, IRadio
     {
@@ -38,6 +39,10 @@ namespace Homework10
         {
             Brand = "BMW";
             MaxSpeed = 200;
+        }
+        public override void GetSpeed()
+        {
+            Console.WriteLine($"{MaxSpeed}" + $"{Accelerate}");
         }
 
         public override void Accelerate()
@@ -109,6 +114,10 @@ namespace Homework10
             Brand = "Audi";
             MaxSpeed = 180;
         }
+        public override void GetSpeed()
+        {
+            Console.WriteLine($"{MaxSpeed}" + $"{Accelerate}");
+        }
         public override void Accelerate()
         {
             Console.WriteLine($"The {Brand} car is accelerating.");
@@ -174,7 +183,11 @@ namespace Homework10
                 Brand = "Mclaren";
                 MaxSpeed = 260;
             }
-            public override void Accelerate()
+        public override void GetSpeed()
+        {
+            Console.WriteLine($"{MaxSpeed}" + $"{Accelerate}");
+        }
+        public override void Accelerate()
             {
                 Console.WriteLine($"The {Brand} car is accelerating.");
                 MaxSpeed += 18;

@@ -1,27 +1,37 @@
-﻿namespace Homework10
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Homework10
 {
     internal class Program
     {
+        private static void TestCarFunctionality(Vehicle car)
+        {
+
+            car.GetSpeed();
+            car.Accelerate();
+            car.GetSpeed();
+            car.Brake();
+            car.GetSpeed();
+
+        }
 
         static void Main(string[] args)
         {
             BMW BMWCar = new BMW();
-            BMWCar.Accelerate(); 
-            BMWCar.Brake(); 
+            TestCarFunctionality(BMWCar); 
+
             BMWCar.PrintInterfaceComponents();
 
             Console.WriteLine();
 
             Audi audiCar = new Audi();
-            audiCar.Accelerate(); 
-            audiCar.Brake(); 
+            TestCarFunctionality(audiCar);
             audiCar.PrintInterfaceComponents();
 
             Console.WriteLine();
 
             Mclaren MclarenCar = new Mclaren();
-            MclarenCar.Accelerate(); 
-            MclarenCar.Brake(); 
+            TestCarFunctionality(MclarenCar);
             MclarenCar.PrintInterfaceComponents();
         }
     }
