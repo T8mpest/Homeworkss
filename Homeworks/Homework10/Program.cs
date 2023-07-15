@@ -12,6 +12,7 @@ namespace Homework10
             car.GetSpeed();
             car.Brake();
             car.GetSpeed();
+            Console.WriteLine();
 
         }
 
@@ -19,7 +20,6 @@ namespace Homework10
         {
             BMW BMWCar = new BMW();
             TestCarFunctionality(BMWCar);
-
             BMWCar.PrintInterfaceComponents();
 
             Console.WriteLine();
