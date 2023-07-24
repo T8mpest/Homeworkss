@@ -26,35 +26,94 @@ namespace Homework10
     {
         protected string Brand { get; set; }
         protected int CurrentSpeed { get; set; }
+        protected int MaxSpeed { get; set; }
+        public bool IsMovingForward { get; set; }
+        protected int initialMaxSpeed { get; }
 
-        public abstract void Accelerate();
-        public abstract void Brake();
+        public abstract void Accelerate(int amount);
+        public abstract void Brake(int amount);
         public abstract void GetSpeed();
+        public Vehicle(string brand, int maxSpeed)
+        {
+            Brand = brand;
+            CurrentSpeed = 0;
+            MaxSpeed = maxSpeed;
+            initialMaxSpeed = maxSpeed;
+        }
+
+        public int GetMaxSpeed()
+        {
+            return initialMaxSpeed;
+
+        }
     }
 
 
-    class BMW : Vehicle, ISeats, IRadio
+        class BMW : Vehicle, ISeats, IRadio
     {
-        public BMW()
+        public BMW() : base("BMW", 250)
         {
-            Brand = "BMW";
+
             CurrentSpeed = 200;
+
         }
         public override void GetSpeed()
         {
-            Console.WriteLine($"{Brand} speed: {CurrentSpeed}");
+            Console.WriteLine($"{Brand} speed: {CurrentSpeed}/{MaxSpeed}");
         }
 
-        public override void Accelerate()
+        public override void Accelerate(int amount)
         {
             Console.WriteLine($"The {Brand} car is accelerating.");
-            CurrentSpeed += 10;
+            try
+            {
+                if (amount <= 0)
+                    throw new ArgumentOutOfRangeException("amount", "Acceleration amount should be a positive value.");
+
+                int newSpeed = CurrentSpeed + amount;
+                if (newSpeed > MaxSpeed)
+                {
+                    Console.WriteLine($"Error: Exceeding maximum speed of {MaxSpeed}.");
+                    return; 
+                }
+
+                CurrentSpeed = newSpeed;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
 
-        public override void Brake()
+        public override void Brake(int amount)
         {
             Console.WriteLine($"The {Brand} car is braking.");
-            CurrentSpeed -= 20;
+            try
+            {
+                if (amount <= 0)
+                    throw new ArgumentOutOfRangeException("amount", "Braking amount should be a positive value.");
+
+                int newSpeed = CurrentSpeed - amount;
+                if (newSpeed < 0)
+                {
+                    Console.WriteLine($"Error: Car cannot move in reverse at this speed.");
+                    return; 
+                }
+
+                CurrentSpeed = newSpeed;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
 
         public void TurnOn()
@@ -109,24 +168,67 @@ namespace Homework10
     }
     public class Audi : Vehicle, IRadio, ISeats
     {
-        public Audi()
+        public Audi() : base("Audi", 200)
         {
-            Brand = "Audi";
+
             CurrentSpeed = 180;
+
         }
         public override void GetSpeed()
         {
-            Console.WriteLine($"{Brand} speed: {CurrentSpeed}");
+            Console.WriteLine($"{Brand} speed: {CurrentSpeed}/{MaxSpeed}");
         }
-        public override void Accelerate()
+        public override void Accelerate(int amount)
         {
             Console.WriteLine($"The {Brand} car is accelerating.");
-            CurrentSpeed += 8;
+            try
+            {
+                if (amount <= 0)
+                    throw new ArgumentOutOfRangeException("amount", "Acceleration amount should be a positive value.");
+
+                int newSpeed = CurrentSpeed + amount;
+                if (newSpeed > MaxSpeed)
+                {
+                    Console.WriteLine($"Error: Exceeding maximum speed of {MaxSpeed}.");
+                    return;
+                }
+
+                CurrentSpeed = newSpeed;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
-        public override void Brake()
+        public override void Brake(int amount)
         {
             Console.WriteLine($"The {Brand} car is braking.");
-            CurrentSpeed -= 16;
+            try
+            {
+                if (amount <= 0)
+                    throw new ArgumentOutOfRangeException("amount", "Braking amount should be a positive value.");
+
+                int newSpeed = CurrentSpeed - amount;
+                if (newSpeed < 0)
+                {
+                    Console.WriteLine($"Error: Car cannot move in reverse at this speed.");
+                    return; 
+                }
+
+                CurrentSpeed = newSpeed;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
         public void TurnOn()
         {
@@ -178,27 +280,70 @@ namespace Homework10
     }
     class Mclaren : Vehicle, IRadio, ISeats
     {
-        public Mclaren()
+        public Mclaren() : base("Mclaren", 278)
         {
-            Brand = "Mclaren";
+
             CurrentSpeed = 260;
+ 
         }
 
         public override void GetSpeed()
         {
-            Console.WriteLine($"{Brand} speed: {CurrentSpeed}");
+            Console.WriteLine($"{Brand} speed: {CurrentSpeed}/{MaxSpeed}");
         }
 
-        public override void Accelerate()
+        public override void Accelerate(int amount)
         {
             Console.WriteLine($"The {Brand} car is accelerating.");
-            CurrentSpeed += 18;
+            try
+            {
+                if (amount <= 0)
+                    throw new ArgumentOutOfRangeException("amount", "Acceleration amount should be a positive value.");
+
+                int newSpeed = CurrentSpeed + amount;
+                if (newSpeed > MaxSpeed)
+                {
+                    Console.WriteLine($"Error: Exceeding maximum speed of {MaxSpeed}.");
+                    return;
+                }
+
+                CurrentSpeed = newSpeed;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
 
-        public override void Brake()
+        public override void Brake(int amount)
         {
             Console.WriteLine($"The {Brand} car is braking.");
-            CurrentSpeed -= 30;
+            try
+            {
+                if (amount <= 0)
+                    throw new ArgumentOutOfRangeException("amount", "Braking amount should be a positive value.");
+
+                int newSpeed = CurrentSpeed - amount;
+                if (newSpeed < 0)
+                {
+                    Console.WriteLine($"Error: Car cannot move in reverse at this speed.");
+                    return; 
+                }
+
+                CurrentSpeed = newSpeed;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
         public void TurnOn()
         {
