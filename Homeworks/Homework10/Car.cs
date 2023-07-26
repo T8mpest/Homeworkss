@@ -28,7 +28,7 @@ namespace Homework10
         protected int CurrentSpeed { get; set; }
         protected int MaxSpeed { get; set; }
         public bool IsMovingForward { get; set; }
-        protected int initialMaxSpeed { get; }
+
 
         public abstract void Accelerate(int amount);
         public abstract void Brake(int amount);
@@ -38,24 +38,15 @@ namespace Homework10
             Brand = brand;
             CurrentSpeed = 0;
             MaxSpeed = maxSpeed;
-            initialMaxSpeed = maxSpeed;
-        }
-
-        public int GetMaxSpeed()
-        {
-            return initialMaxSpeed;
-
         }
     }
 
 
-        class BMW : Vehicle, ISeats, IRadio
+    class BMW : Vehicle, ISeats, IRadio
     {
         public BMW() : base("BMW", 250)
         {
-
             CurrentSpeed = 200;
-
         }
         public override void GetSpeed()
         {
@@ -74,7 +65,7 @@ namespace Homework10
                 if (newSpeed > MaxSpeed)
                 {
                     Console.WriteLine($"Error: Exceeding maximum speed of {MaxSpeed}.");
-                    return; 
+                    return;
                 }
 
                 CurrentSpeed = newSpeed;
@@ -101,7 +92,7 @@ namespace Homework10
                 if (newSpeed < 0)
                 {
                     Console.WriteLine($"Error: Car cannot move in reverse at this speed.");
-                    return; 
+                    return;
                 }
 
                 CurrentSpeed = newSpeed;
@@ -170,9 +161,7 @@ namespace Homework10
     {
         public Audi() : base("Audi", 200)
         {
-
             CurrentSpeed = 180;
-
         }
         public override void GetSpeed()
         {
@@ -282,9 +271,7 @@ namespace Homework10
     {
         public Mclaren() : base("Mclaren", 278)
         {
-
             CurrentSpeed = 260;
- 
         }
 
         public override void GetSpeed()
@@ -331,7 +318,7 @@ namespace Homework10
                 if (newSpeed < 0)
                 {
                     Console.WriteLine($"Error: Car cannot move in reverse at this speed.");
-                    return; 
+                    return;
                 }
 
                 CurrentSpeed = newSpeed;

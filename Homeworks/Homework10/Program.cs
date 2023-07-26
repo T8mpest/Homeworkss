@@ -8,7 +8,7 @@ namespace Homework10
         {
 
             car.GetSpeed();
-           
+
             car.Accelerate(50);
             car.GetSpeed();
             car.Brake(30);
