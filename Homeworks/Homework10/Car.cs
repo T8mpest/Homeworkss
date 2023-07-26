@@ -190,7 +190,7 @@ namespace Homework10
                 if (newSpeed > MaxSpeed)
                 {
                     Console.WriteLine($"Error: Exceeding maximum speed of {MaxSpeed}.");
-                    return;
+                    newSpeed = MaxSpeed;
                 }
 
                 CurrentSpeed = newSpeed;
@@ -216,7 +216,7 @@ namespace Homework10
                 if (newSpeed < 0)
                 {
                     Console.WriteLine($"Error: Car cannot move in reverse at this speed.");
-                    return; 
+                    newSpeed = MaxSpeed;
                 }
 
                 CurrentSpeed = newSpeed;
@@ -304,7 +304,7 @@ namespace Homework10
                 if (newSpeed > MaxSpeed)
                 {
                     Console.WriteLine($"Error: Exceeding maximum speed of {MaxSpeed}.");
-                    return;
+                    newSpeed = MaxSpeed;
                 }
 
                 CurrentSpeed = newSpeed;
