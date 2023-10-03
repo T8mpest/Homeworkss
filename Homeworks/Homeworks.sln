@@ -21,11 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework12", "BubbleSort\Ho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{DFBDB9D2-63AD-4F3D-B8C3-A4AFD389F6D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{3F94AECF-C65C-4548-A4D6-8A85DD551DA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ", "LINQ\LINQ.csproj", "{3F94AECF-C65C-4548-A4D6-8A85DD551DA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogRead", "LogRead\LogRead.csproj", "{2EDE6910-E9BB-4BD9-8E30-1C34EF3F8531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogRead", "LogRead\LogRead.csproj", "{2EDE6910-E9BB-4BD9-8E30-1C34EF3F8531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Thread", "2Thread\2Thread.csproj", "{1F545C30-BCB7-4D46-9038-01F0240D2E59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2Thread", "2Thread\2Thread.csproj", "{1F545C30-BCB7-4D46-9038-01F0240D2E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel", "Parallel\Parallel.csproj", "{8477C3CA-5337-4B51-81CD-5EF714263EF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{1F545C30-BCB7-4D46-9038-01F0240D2E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F545C30-BCB7-4D46-9038-01F0240D2E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F545C30-BCB7-4D46-9038-01F0240D2E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8477C3CA-5337-4B51-81CD-5EF714263EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8477C3CA-5337-4B51-81CD-5EF714263EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8477C3CA-5337-4B51-81CD-5EF714263EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8477C3CA-5337-4B51-81CD-5EF714263EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
