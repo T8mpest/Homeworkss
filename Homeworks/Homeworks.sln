@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-based Asynchronous Pat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel LINQ", "Parallel LINQ\Parallel LINQ.csproj", "{A2409C56-CABC-4C82-9C01-43FBCAC266BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework30", "Homework30\Homework30.csproj", "{35EA77CE-125B-46E7-875C-97364884D7A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{A2409C56-CABC-4C82-9C01-43FBCAC266BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2409C56-CABC-4C82-9C01-43FBCAC266BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2409C56-CABC-4C82-9C01-43FBCAC266BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35EA77CE-125B-46E7-875C-97364884D7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EA77CE-125B-46E7-875C-97364884D7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EA77CE-125B-46E7-875C-97364884D7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EA77CE-125B-46E7-875C-97364884D7A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
