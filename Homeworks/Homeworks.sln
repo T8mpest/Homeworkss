@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parallel", "Parallel\Parall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-based Asynchronous Pattern", "Task-based Asynchronous Pattern\Task-based Asynchronous Pattern.csproj", "{61E7B68C-D678-4B26-916F-99975FFA9487}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel LINQ", "Parallel LINQ\Parallel LINQ.csproj", "{A2409C56-CABC-4C82-9C01-43FBCAC266BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{61E7B68C-D678-4B26-916F-99975FFA9487}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61E7B68C-D678-4B26-916F-99975FFA9487}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61E7B68C-D678-4B26-916F-99975FFA9487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2409C56-CABC-4C82-9C01-43FBCAC266BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2409C56-CABC-4C82-9C01-43FBCAC266BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2409C56-CABC-4C82-9C01-43FBCAC266BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2409C56-CABC-4C82-9C01-43FBCAC266BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

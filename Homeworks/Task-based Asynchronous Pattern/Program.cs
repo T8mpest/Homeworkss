@@ -44,7 +44,7 @@
         static async Task<int> CalculateAsync(int number, int threadCount)
         {
 
-            //await Task.Delay(1000);
+            await Task.Delay(1000);
 
             return await Task.Run(() =>
             {
