@@ -20,7 +20,6 @@
 
             
             otherObj.Dispose();
-            Console.ReadLine();
         }
     }
 }

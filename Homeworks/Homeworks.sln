@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallel LINQ", "Parallel L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework30", "Homework30\Homework30.csproj", "{35EA77CE-125B-46E7-875C-97364884D7A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML and JSON", "XML and JSON\XML and JSON.csproj", "{B2068FB4-1180-42AA-89F8-7285783A5991}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{35EA77CE-125B-46E7-875C-97364884D7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35EA77CE-125B-46E7-875C-97364884D7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35EA77CE-125B-46E7-875C-97364884D7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2068FB4-1180-42AA-89F8-7285783A5991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2068FB4-1180-42AA-89F8-7285783A5991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2068FB4-1180-42AA-89F8-7285783A5991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2068FB4-1180-42AA-89F8-7285783A5991}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
