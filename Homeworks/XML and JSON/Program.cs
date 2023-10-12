@@ -26,18 +26,17 @@
             XMLManager xmlManager = new XMLManager(data);
             JSONManager jsonManager = new JSONManager(data);
 
-            // Save to XML
+
             xmlManager.Save("data.xml");
 
-            // Save to JSON
+
             jsonManager.Save("data.json");
 
-            // Load and display XML data
             Data xmlData = xmlManager.Load("data.xml");
             Console.WriteLine("Data from XML:");
             Console.WriteLine($"Name: {xmlData.Name}, Age: {xmlData.Age}, Email: {xmlData.Email}");
 
-            // Load and display JSON data
+    
             Data jsonData = jsonManager.Load("data.json");
             Console.WriteLine("\nData from JSON:");
             Console.WriteLine($"Name: {jsonData.Name}, Age: {jsonData.Age}, Email: {jsonData.Email}");
